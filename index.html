@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/w3.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Communi Sound</title>
+    <script>
+        function openRightMenu() {
+        document.getElementById("rightMenu").style.display = "block";
+        }
+
+        function closeRightMenu() {
+        document.getElementById("rightMenu").style.display = "none";
+        }
+
+        function login(){
+        let id = document.getElementById("id").value;
+        let pw = document.getElementById("pw").value;
+        if(id==="admin"){
+            if(pw=="1234"){
+                alert (id + "님 로그인되었습니다.")
+                document.getElementById("login").innerHTML="<h4>" + id + 
+                "님 반갑습니다! </h2>"; 
+                document.getElementById("myPage").innerHTML="<h4>" + id + 
+                "님 반갑습니다! </h2>"; 
+            } else {
+                alert("비밀번호를 확인하세요.");
+            }
+        }else{
+            alert("회원가입 하세요.");
+        }
+    }
+    </script>
+</head>
+<body>
+    <aside>
+        <div id="rBar">
+            <div id="search">
+                <input type="text" name="#" placeholder="아티스트 또는 음원을 검색해보세요.">
+                <a href="#"><button class="searchIcon"><i class="fa fa-search w3-small"></i></button></a>
+            </div>
+            <div id="profile">
+                <h1>내 프로필</h1>
+                <a href="#" target="_self"><img class="pI" src="./images/pro_img05.png" alt="pImg"></a>
+                <span class="pN">Rainy</span>
+                <span class="pFL">팔로워&nbsp; 82명&nbsp;&nbsp;&#124;&nbsp;&nbsp;좋아요&nbsp; 889회</span>
+                <hr>
+                <span class="pE">빗소리 전문가 "Rainy" 입니다. 물방울이 만드는 청량한 소리에 집중해보세요.</span>
+            </div>
+        </div>
+        <div id="rE">
+            <button><i class="fa fa-heart" aria-hidden="true"></i></button>
+            <button><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></button>
+            <button><i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+        </div>
+    </aside>
+    <section>
+        <header>
+            <div id="loginSidebar">
+                <div class="w3-sidebar w3-bar-block w3-card w3-animate-top" style="display: none; right:0; min-width: 220px; height: auto; z-index: 2;" id="rightMenu">
+                    <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large w3-hover-none">&times;</button>           
+                    <div id="login" class="w3-container">
+                        <h3 style="margin-left: 10px;"><b>로그인</b></h3>
+                        <input type="text" class ="width : 120px" name="" id="id" placeholder="이메일 또는 아이디"><br>                
+                        <input type="password" class ="width : 120px" name="" id="pw" placeholder="비밀번호"><br>
+                        <a href="" style="font-size: 12px;">아이디/비밀번호를 잊으셨나요?</a></br>
+                        <button onclick="login();">로그인</button></br><hr>
+                        <div class="hr-sect">또는</div>
+                        <div class="snsLogin">
+                            <a href="https://www.naver.com/"><button class="naver"><img src="./images/naver.jpg">  네이버로 로그인</button></a>
+                            <a href="https://www.facebook.com/"><button class="facebook"><img src="./images/facebook.jpg"> 페이스북으로 로그인</button></a>
+                            <a href="https://www.kakaocorp.com/page/"><button class="kakao" style="margin-bottom: 30px;"><img src="./images/kakao.jpg">카카오톡으로 로그인</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="hU">
+                <span><a href="#loginSidebar" onclick="openRightMenu()">로그인</a></span>&nbsp;&#124;&nbsp;
+                <a href="#" target="_self">회원가입</a>&nbsp;&#124;&nbsp;
+                <a href="#" target="_self">장바구니</a>&nbsp;&#124;&nbsp;
+                <a href="#" target="_self">마이페이지</a>
+            </span>
+            <div id="logo">
+                <img src="./images/logo.png" alt="logo" class="lI">
+                <span class="hT">Communi Sound</span>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#" target="_self">신규 음원</a></li>
+                <li><a href="#" target="_self">신규 아티스트</a></li>
+                <li><a href="#" target="_self">장르 음원</a></li>
+                <li><a href="#" target="_self">추천 음원</a></li>
+                <li><a href="#" target="_self">무료 음원</a></li>
+                <li><a href="#" target="_self">이벤트/공지사항</a></li>
+            </ul>
+        </nav>
+        <article>
+            <main>
+                <div id="S01">
+                    <div class="main01">
+                        <img src="./images/pro_img02.png" alt="mI" class="mI">
+                        <div>
+                            <span class="mG">빗소리</span>
+                            <span class="mT">천둥 번개 치는 폭우가 내리는 공원의 빗소리</span>
+                            <span class="mE">천둥번개가 치는 밤 폭우가 내리는 공원의 빗소리는 마음을 편안하게 해줍니다. </span>
+                            <span class="mA"><a href="#">rainy</a></span>
+                        </div>
+                    </div>
+                    <div class="main02">
+                        <div class="audi">
+                            <audio src="#" loop controls></audio>&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="mEm">
+                            <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            <button><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                            <button><i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="S01">
+                    <div class="main01">
+                        <img src="./images/pro_img02.png" alt="mI" class="mI">
+                        <div>
+                            <span class="mG">빗소리</span>
+                            <span class="mT">천둥 번개 치는 폭우가 내리는 공원의 빗소리</span>
+                            <span class="mE">천둥번개가 치는 밤 폭우가 내리는 공원의 빗소리는 마음을 편안하게 해줍니다. </span>
+                            <span class="mA"><a href="#">rainy</a></span>
+                        </div>
+                    </div>
+                    <div class="main02">
+                        <div class="audi">
+                            <audio src="#" loop controls></audio>&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="mEm">
+                            <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            <button><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                            <button><i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="S01">
+                    <div class="main01">
+                        <img src="./images/pro_img02.png" alt="mI" class="mI">
+                        <div>
+                            <span class="mG">빗소리</span>
+                            <span class="mT">천둥 번개 치는 폭우가 내리는 공원의 빗소리</span>
+                            <span class="mE">천둥번개가 치는 밤 폭우가 내리는 공원의 빗소리는 마음을 편안하게 해줍니다. </span>
+                            <span class="mA"><a href="#">rainy</a></span>
+                        </div>
+                    </div>
+                    <div class="main02">
+                        <div class="audi">
+                            <audio src="#" loop controls></audio>&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="mEm">
+                            <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            <button><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                            <button><i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="S01">
+                    <div class="main01">
+                        <img src="./images/pro_img02.png" alt="mI" class="mI">
+                        <div>
+                            <span class="mG">빗소리</span>
+                            <span class="mT">천둥 번개 치는 폭우가 내리는 공원의 빗소리</span>
+                            <span class="mE">천둥번개가 치는 밤 폭우가 내리는 공원의 빗소리는 마음을 편안하게 해줍니다. </span>
+                            <span class="mA"><a href="#">rainy</a></span>
+                        </div>
+                    </div>
+                    <div class="main02">
+                        <div class="audi">
+                            <audio src="#" loop controls></audio>&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="mEm">
+                            <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            <button><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                            <button><i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="S01">
+                    <div class="main01">
+                        <img src="./images/pro_img02.png" alt="mI" class="mI">
+                        <div>
+                            <span class="mG">빗소리</span>
+                            <span class="mT">천둥 번개 치는 폭우가 내리는 공원의 빗소리</span>
+                            <span class="mE">천둥번개가 치는 밤 폭우가 내리는 공원의 빗소리는 마음을 편안하게 해줍니다. </span>
+                            <span class="mA"><a href="#">rainy</a></span>
+                        </div>
+                    </div>
+                    <div class="main02">
+                        <div class="audi">
+                            <audio src="#" loop controls></audio>&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="mEm">
+                            <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            <button><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                            <button><i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <aside>
+                <div class="right">
+                    <div id="profile01">
+                        <h1>신규 아티스트<br>추천</h1>
+                        <a href="#" target="_self"><img class="pI" src="./images/pro_img03.png" alt="pImg"></a>
+                        <span class="pN">knocky</span>
+                        <span class="pFL">팔로워&nbsp; 2명&nbsp;&nbsp;&#124;&nbsp;&nbsp;좋아요&nbsp; 33회</span>
+                        <hr>
+                        <span class="pE">똑똑! 안녕하세요. "knocky" 입니다. 똑똑!</span>
+                    </div>
+                    <div class="ad">
+                        <span>advertisement</span>  
+                    </div>
+                </div>
+            </aside>
+        </article>
+        <footer>
+            <p id="fG">
+                <span>이용약관</span>&nbsp;&#124;
+                <span>개인정보 처리방침</span>&nbsp;&#124;
+                <span>공지사항</span>&nbsp;&#124;
+                <span>1대1 질문</span>&nbsp;&#124;
+                <span>고객센터</span>&nbsp;&#124;
+                <span>인재영입</span>
+            </p>
+            <div id="fM">
+                <p class="call">
+                    <span class="fT">Call</span>
+                    <span>전화 : 070-111-2222</span><br>
+                    <span>팩스 : 051-1122-2233 </span><br>
+                    <span>이메일: commusound1234@communisound.com</span>
+                </p>
+                <p class="office">
+                    <span class="fT">Office</span>
+                    <span>평일 오전 10시 - 오후 6시 (점심시간 1시-2시)</span><br>
+                    <span>토요일, 일요일, 공휴일에는 근무하지 않습니다.</span>
+                </p>
+                <p class="sns" >
+                    <span class="fT">SNS</span>
+                    <a href="#" target="_blank"><i class="fa fa-youtube"></i></a> 
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a> 
+                    <a href="https://www.instagram.com/?hl=ko" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a> 
+                </p>
+            </div>
+            <hr>
+            <div class="fD">
+                <span>
+                    사업자 등록번호 : 000-11-23333 [사업자정보확인] 사업 개시일 2021년 11월 1일 
+                    | 통신 판매업신고 번호 : 제 2020-부산중구-1122호 | 개인정보관리 책임자 : 배금빈(commusound1234@communisound.com) | 결제 PG 대행사 : KPC, 애스크로 서비스 : KPC애스크로 
+                    | 호스팅 제공자 : (주) 스마일 | Copyright&#169;CommuniSound.All Right Reserved.
+                </span>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
