@@ -1,0 +1,20 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display:flex;
+}
+aside{
+    flex:1;
+}
+section{
+    flex:5;
+}
+header, nav, div, article, aside, section, footer, span{
+    border: 2px solid gray;
+}
+a{
+    text-decoration: none;
+    color: inherit; /* 링크의 색상 제거 */
+}
+
