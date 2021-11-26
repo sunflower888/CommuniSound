@@ -1,0 +1,320 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h1{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+::placeholder{
+    font-size: 11px;
+}
+a, h1, h2, ::placeholder{
+    letter-spacing: -0.5px;
+}
+input{
+    width: 180px;
+}
+header{
+    background-image: url("../images/header_img.jpg");
+    background-size: 100%;
+    background-color: rgba(38, 50, 56,0.8);
+    margin: 0px;
+    padding: 0px;
+    height: 125px;
+}
+#hU{
+    color:rgb(205, 174, 255);
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    margin:0px;
+    padding: 10px 80px;
+}
+#hU a:hover{
+    color: rgb(245, 241, 252);
+}
+#logo{
+    padding: 10px 20px;
+    margin: 0px;  
+}
+#logo img{
+    position: relative;
+    bottom: 10px;
+}
+#logo span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* color:rgb(245, 241, 252); */
+    color: white;
+    font-size: 42px;
+}
+body{
+    display: flex;
+}
+aside{
+    flex:1;
+    background-color: #263238;
+}
+section{
+    flex: 5;
+}
+#profile{
+    background-color: white;
+    margin: 0px auto;
+    padding:10px;
+    width: 180px;
+    box-shadow: 5px 5px 0px 2px rgb(128, 50, 255);
+}
+#profile hr{
+    margin:5px;
+}
+#profile01{
+    background-color: white;
+    margin: 10px auto;
+    padding:10px;
+    width: 180px;
+    box-shadow: 5px 5px 0px 2px rgb(207, 50, 255);
+}
+#profile01 hr{
+    margin:5px;
+}
+.pI{
+    display: block;
+    margin: 0px auto;
+    width: 100px;
+    height: 100px;
+}
+.pN, .pFL, .pE{
+    display: block;
+    margin: 2px auto;
+    text-align: center;
+}
+.pN{
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.pFL{
+    font-size: 12px;
+    color: gray;
+    letter-spacing: -1px;
+}
+.pE{
+    font-size: 14px;
+    padding : 10px;
+}
+.lI{
+    width: 50px;
+    height: 50px;
+}
+#search, #profile{
+    margin-top: 20px;
+}
+#search{
+    text-align: center;
+}
+.hT{
+    font-size: 32px;
+}
+nav{
+    background-color: rgba(38, 50, 56,0.87);
+    position: sticky;
+    top:-1px;
+    z-index: 1;
+}
+nav ul{
+    margin:0px;
+    text-align: center;
+}
+ul li{
+    font-size: 17px;
+    display: inline-block;
+    letter-spacing:1px;
+    padding: 12px 25px;
+    color: rgb(230, 216, 252);
+    /* color: rgb(245, 241, 252); */
+}
+ul li:hover{
+    color: #b282ff;
+    background-color: rgba(38, 50, 56,0.9);
+}
+footer{
+    background-color: rgba(38, 50, 56,0.8);
+    padding: 7px 17px;
+    color: rgb(184, 184, 184);
+}
+#fG{
+    font-size: 12px;
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+#fG span:hover{
+    color: rgb(170, 117, 255);
+}
+.fT{
+    font-size: 17px;
+    padding:4px;
+    font-weight: bold;
+    display: block;
+}
+#fM{
+    font-size: 13px;
+    display: flex;
+}
+#fM p{
+    margin: 0px;
+    padding: 0px;
+}
+.call, .office, .sns{
+    flex: 1;
+}
+.sns i{
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.fD{
+    font-size: 12px;
+    padding-bottom: 15px;
+    margin:0px;
+}
+article{
+    display: flex;
+}
+main{
+    flex: 5;
+}
+.mI{
+    width: 80px;
+    height: 80px;
+}
+.main01{
+    display: flex;
+}
+.mG, .mE, .mA, .mT{
+    display: block;
+}
+.mG{
+    font-size: 12px;
+    color:rgb(128, 50, 255);
+}
+.mE{
+    font-size: 15px;
+}
+.mA{
+    font-size: 13px;
+}
+.mA a:hover{
+    color:rgb(128, 50, 255);
+}
+#rBar{
+    position: sticky;
+    top: 20px;
+}
+#rE button{
+    margin: 0px auto;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: rgba(38, 50, 56,0.8);
+    border: solid 1px rgba(38, 50, 56,0.8);
+}
+#rE button:hover{
+    border: solid 1px rgb(128, 50, 255);
+    background-color: rgb(128, 50, 255);
+}
+#rE{
+    position: fixed;
+    bottom : 20px;
+    left : 20px;
+}
+#rE i{
+    font-size: 22px;
+    color: white;
+}
+.mT{
+    font-weight: bold;
+}
+audio{
+    width: 400px;
+    height: 40px;
+}
+.main02{
+    display: flex;
+}
+.audi{
+    flex:3;
+}
+.mEm{
+    flex:1;
+}
+.mEm i{
+    font-size: larger;
+}
+.audi, .mEm{
+    text-align: right;
+    padding-right: 10px;
+}
+.mEm button{
+    padding:0px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid whitesmoke;
+}
+.mEm button:hover{
+    background-color: rgb(245, 241, 252);
+}
+#S01{
+    padding: 10px;
+    border-top: solid 1px whitesmoke;
+}
+#S01:hover{
+    box-shadow: 5px 5px 5px rgb(227, 221, 236);
+}
+.right{
+    position: sticky;
+    top: 45px;
+}
+.ad{
+    margin: 15px 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgb(240, 80, 32);
+    width: 230px;
+    height: 120px;
+}
+.ad span{
+    color: white;
+    font-size: 25px;
+}
+.snsLogin button{
+    display: block;
+    border : 1px solid gray;
+    background-color: white;
+    width: 200px;
+    height : 30px;
+    margin-bottom: 3px;
+}
+.snsLogin img{
+    width: 15px;
+    height : 15px;
+}
+.go{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 90px;
+    bottom: 100px;
+}
+.go i{
+    color: white;
+    font-size: 50px;
+}
